@@ -34,17 +34,19 @@ function qTwo() {
 }
 qTwo();
 
-let car = prompt('Can I drive a manual?').toLowerCase();
-if (car === 'yes') {
-  alert('Of course! Its the fun way to drive');
-  totalcorrectanswers++;
-  console.log(car);
+function qThree() {
+  let car = prompt('Can I drive a manual?').toLowerCase();
+  if (car === 'yes') {
+    alert('Of course! Its the fun way to drive');
+    totalcorrectanswers++;
+    console.log(car);
+  }
+  else {
+    alert('You underestimate me...');
+    console.log(car);
+  }
 }
-else {
-  alert('You underestimate me...');
-  console.log(car);
-}
-
+qThree();
 
 let beach = prompt('Do I prefer the beach over the forest?').toLowerCase();
 if (beach === 'no') {
