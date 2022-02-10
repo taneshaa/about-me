@@ -62,16 +62,19 @@ function qFour() {
 }
 qFour();
 
-let travel = prompt('Am I a dual citizen in the US in another country?').toLowerCase();
-if (travel === 'no') {
-  alert('You are right! Im not but I wish I was!!');
-  totalcorrectanswers++;
-  console.log(travel);
+function qFive() {
+  let travel = prompt('Am I a dual citizen in the US in another country?').toLowerCase();
+  if (travel === 'no') {
+    alert('You are right! Im not but I wish I was!!');
+    totalcorrectanswers++;
+    console.log(travel);
+  }
+  else {
+    alert('I wish it was true..but alas, tis not');
+    console.log(travel);
+  }
 }
-else {
-  alert('I wish it was true..but alas, tis not');
-  console.log(travel);
-}
+qFive();
 
 alert('Goodbye ' + userName + '! Thanks for stoppin by');
 
