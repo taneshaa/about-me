@@ -1,12 +1,11 @@
 'use strict';
 
 // have correct and incorrect for yes or no answer
+let totalcorrectanswers = 0;
+let userName = prompt('Whats your name?');
+alert('Welcome ' + userName + '!');
 
 function qOne() {
-  let userName = prompt('Whats your name?');
-  alert('Welcome ' + userName + '!');
-
-  let totalcorrectanswers = 0;
   let color = prompt('Is green my favorite color?').toLowerCase();
   if (color === 'yes') {
     alert('Thats right!');
