@@ -78,25 +78,28 @@ qFive();
 
 alert('Goodbye ' + userName + '! Thanks for stoppin by');
 
-let tries = 0;
-let number = 7;
-while (tries < 4) {
-  tries++;
-  let guess = +prompt('What number am I thinking of between 1-20');
-  if (guess === number) {
-    alert('Youre right!');
-    tries = 4;
-  }
-  else if (guess < number) {
-    alert('too low');
-  }
-  else {
-    alert('too high');
-  }
-  if (tries === 4) {
-    alert('No attempts left, Correct answer is 7');
+function qSix() {
+  let tries = 0;
+  let number = 7;
+  while (tries < 4) {
+    tries++;
+    let guess = +prompt('What number am I thinking of between 1-20');
+    if (guess === number) {
+      alert('Youre right!');
+      tries = 4;
+    }
+    else if (guess < number) {
+      alert('too low');
+    }
+    else {
+      alert('too high');
+    }
+    if (tries === 4) {
+      alert('No attempts left, Correct answer is 7');
+    }
   }
 }
+qSix();
 
 let attempt = 0;
 let answer = ['explore', 'garden', 'try new things'];
