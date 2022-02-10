@@ -21,18 +21,19 @@ function qOne() {
 }
 qOne();
 
-
-let dog = prompt('Do I have a dog?').toLowerCase();
-if (dog === 'yes') {
-  alert('YES!! And shes the best');
-  totalcorrectanswers++;
-  console.log(dog);
+function qTwo() {
+  let dog = prompt('Do I have a dog?').toLowerCase();
+  if (dog === 'yes') {
+    alert('YES!! And shes the best');
+    totalcorrectanswers++;
+    console.log(dog);
+  }
+  else {
+    alert('*dead pacmac sound* wrong');
+    console.log(dog);
+  }
 }
-else {
-  alert('*dead pacmac sound* wrong');
-  console.log(dog);
-}
-
+qTwo();
 
 let car = prompt('Can I drive a manual?').toLowerCase();
 if (car === 'yes') {
