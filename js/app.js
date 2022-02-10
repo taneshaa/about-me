@@ -101,19 +101,22 @@ function qSix() {
 }
 qSix();
 
-let attempt = 0;
-let answer = ['explore', 'garden', 'try new things'];
-while (attempt < 6) {
-  let game = prompt('What are my 3 favorite things to do?');
-  attempt++;
-  for (let i = 0; i < answer.length; i++) {
-    if (game === answer[i]) {
-      alert('right!');
-      totalcorrectanswers++;
-      attempt = 6;
+function qSeven() {
+  let attempt = 0;
+  let answer = ['explore', 'garden', 'try new things'];
+  while (attempt < 6) {
+    let game = prompt('What are my 3 favorite things to do?');
+    attempt++;
+    for (let i = 0; i < answer.length; i++) {
+      if (game === answer[i]) {
+        alert('right!');
+        totalcorrectanswers++;
+        attempt = 6;
+      }
     }
   }
 }
+qSeven();
 
 console.log(totalcorrectanswers);
 
