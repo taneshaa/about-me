@@ -48,16 +48,19 @@ function qThree() {
 }
 qThree();
 
-let beach = prompt('Do I prefer the beach over the forest?').toLowerCase();
-if (beach === 'no') {
-  alert('Facts! Id rather be in a hammock in the woods');
-  totalcorrectanswers++;
-  console.log(beach);
+function qFour() {
+  let beach = prompt('Do I prefer the beach over the forest?').toLowerCase();
+  if (beach === 'no') {
+    alert('Facts! Id rather be in a hammock in the woods');
+    totalcorrectanswers++;
+    console.log(beach);
+  }
+  else {
+    alert('tsk tsk tsk..wrong answer');
+    console.log(beach);
+  }
 }
-else {
-  alert('tsk tsk tsk..wrong answer');
-  console.log(beach);
-}
+qFour();
 
 let travel = prompt('Am I a dual citizen in the US in another country?').toLowerCase();
 if (travel === 'no') {
