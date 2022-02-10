@@ -2,21 +2,25 @@
 
 // have correct and incorrect for yes or no answer
 
-let name = prompt('Whats your name?');
-alert('Welcome ' + name + '!');
+function qOne() {
+  let userName = prompt('Whats your name?');
+  alert('Welcome ' + userName + '!');
 
-let totalcorrectanswers = 0;
-let color = prompt('Is green my favorite color?').toLowerCase();
-if (color === 'yes') {
-  alert('Thats right!');
-  totalcorrectanswers++;
-  console.log(color);
-  console.log(totalcorrectanswers);
+  let totalcorrectanswers = 0;
+  let color = prompt('Is green my favorite color?').toLowerCase();
+  if (color === 'yes') {
+    alert('Thats right!');
+    totalcorrectanswers++;
+    console.log(color);
+    console.log(totalcorrectanswers);
+  }
+  else {
+    alert('boo, wrong answer :(');
+    console.log(color);
+  }
 }
-else {
-  alert('boo, wrong answer :(');
-  console.log(color);
-}
+qOne();
+
 
 let dog = prompt('Do I have a dog?').toLowerCase();
 if (dog === 'yes') {
@@ -64,7 +68,7 @@ else {
   console.log(travel);
 }
 
-alert('Goodbye ' + name + '! Thanks for stoppin by');
+alert('Goodbye ' + userName + '! Thanks for stoppin by');
 
 let tries = 0;
 let number = 7;
